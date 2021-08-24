@@ -13,6 +13,10 @@
     <link rel="shortcut icon" href="img/favicon.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
+    <meta property="og:title" content="DesignITAfrica" />
+    <meta property="og:description" content="DesignIT Africa is a gen Z tech org whose keen interest lies in equipping teenagers with digital skills needed to thrive in the 21st century. These teenagers grow further in life to become change agents in their communities utilizing the skills they learn from the organization." />
+    <meta property="og:image" content="img/favicon.png" />
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fontawesome.css">
     <link rel="stylesheet" href="css/design-it.css">
@@ -589,12 +593,20 @@
         <p>Copyright &copy; 2021 DesignIT Africa</p>
     </footer>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/double-arrow.png" alt="scroll up"></button>
+    <button id="myBtn"  title="Go to top"><a href="#" class="arctic_scroll" data-position="10"><img src="img/double-arrow.png" alt="scroll up"></a></button>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/jquery.arctic_scroll.js"></script>
+    <script>
+        $(function(){
+            $(".arctic_scroll").arctic_scroll({
+                speed: 800
+            });
+        });
+    </script>
 </body>
 
 </html>
