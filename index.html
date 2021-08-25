@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html class="no-js" lang="eng">
+<html class="no-js" lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -16,6 +16,8 @@
     <meta property="og:title" content="DesignITAfrica" />
     <meta property="og:description" content="DesignIT Africa is a gen Z tech org whose keen interest lies in equipping teenagers with digital skills needed to thrive in the 21st century. These teenagers grow further in life to become change agents in their communities utilizing the skills they learn from the organization." />
     <meta property="og:image" content="img/favicon.png" />
+    <meta property="og:url" content="https://designitafrica.org" />
+    <meta property="og:type" content="website" />
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fontawesome.css">
@@ -166,7 +168,7 @@
                             <div class="col-md-12">
                                 <div class="content third-content">
                                     <div class="row">
-                                        <section class="counters">
+                                        <section class="counters" onload="allcount()">
                                             <div class="container">
                                                 <div>
                                                     <img src="images/students.png" alt="Students impacted" id="number-logo">
@@ -600,6 +602,7 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
     <script src="js/jquery.arctic_scroll.js"></script>
+    <script src="js/Ycount.js"></script>
     <script>
         $(function(){
             $(".arctic_scroll").arctic_scroll({
