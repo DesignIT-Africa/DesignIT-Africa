@@ -37,14 +37,52 @@
           Your browser does not support the video tag.
         </video>
     </section>
-
     <section class="cd-hero">
-
         <div class="cd-slider-nav">
+            <div class="toggle">
+                <center><h1><a href=".">DesignITAfrica</a></h1></center>
+                <nav style="display: block;">
+                    <center>
+                    <ul id="hamDIV" style="display: block;">
+                    <li class="btn hactive">
+                        <a href="#0" onclick="close_ham()">
+                            <h6 id="dif-color"><strong>About Us</strong></h6>
+                        </a>
+                    </li>
+                    <li class="btn">
+                        <a href="#0" onclick="close_ham()">
+                            <h6 id="dif-color"><strong>Meet the Gamechangers</strong></h6>
+                        </a>
+                    </li>
+                    <li class="btn">
+                        <a href="#0" onclick="close_ham()">
+                            <h6 id="dif-color"><strong>Blog</strong></h6>
+                        </a>
+                    </li>
+                    <li class="btn">
+                        <a href="#0" onclick="close_ham()">
+                            <h6 id="dif-color"><strong>Join the Family</strong></h6>
+                        </a>
+                    </li>
+                    <li class="btn" onclick="close_ham()">
+                        <a href="#0">
+                            <h6 id="dif-color"><strong>Reach Out</strong></h6>
+                        </a>
+                    </li>
+                </ul>
+            </center>
+        </nav>
+                <ul class="social">
+                  <li><a href="#"><i class="fa fa-github"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                 <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+                </ul>
+              </div>
             <nav>
                 <logo>
                     <a href="#"><img src="img/designit.png" alt="DesignIT Africa"></a>
                 </logo>
+                <a href="#" class="navicon" id="ico" onclick="ham()"></a>
                 <ul id="myDIV">
                     <li class="btn active">
                         <a href="#0">
@@ -72,6 +110,7 @@
                         </a>
                     </li>
                 </ul>
+
             </nav>
         </div>
         <!-- .cd-slider-nav -->
@@ -587,7 +626,7 @@
         <!-- .cd-hero-slider -->
     </section>
     <!-- .cd-hero -->
-
+    
 
     <footer>
         <p>Copyright &copy; 2021 DesignIT Africa</p>
@@ -608,6 +647,15 @@
             });
         });
     </script>
+    <script>
+      function ham() {
+            $('.navicon').toggleClass('navicon--active');
+            $('.toggle').toggleClass('toggle--active');
+          }
+          function close_ham(){
+              ham();
+          }
+          </script>
 </body>
 
 </html>
