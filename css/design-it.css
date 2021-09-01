@@ -185,14 +185,15 @@ display: none;
 }
     #ico{
         display: inline;
-        width: 70px;
-        height: 60px;
+        width: 25px;
+        height: 25px;
+        margin-top: 10px;
+        margin-right: 30px;
         float: right;
         border: none;
     }
     .navicon {
         width: 100%;
-        margin-top: 10px;
         background: transparent;
         position: relative;
         height: 30px;
@@ -243,7 +244,7 @@ display: none;
     left: 50%;
     opacity: 0;
     transition: ease-in 0.5s all;
-    transform: translateY(-200%);
+    transform: translate(-50%, -200%);
     min-width: 320px;
     min-height: 360px;
     z-index: 99999999999999;
