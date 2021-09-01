@@ -171,11 +171,18 @@ video::-webkit-media-controls {
     border: none;
     outline: none;
 }
+@media only screen and (min-width: 1050px) {
+    .toggle{
+        display: none;
+    }
+}
 @media screen and (max-width: 1050px) {
     #myDIV{
 display: none;
     }
-
+.toggle{
+    display: block;
+}
     #ico{
         display: inline;
         width: 70px;
