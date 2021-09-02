@@ -945,30 +945,50 @@ team
 */
 
 footer {
-    background-color: #008DB9;
+    background-color: #dad5d5;
     position: relative;
-    width: 100%;
-    bottom: 0;
-    z-index: 2;
-    margin-top: -1px;
+    text-align: center;
+    padding-bottom: 1px;
+    padding-top: 4px;
 }
 
 footer p {
     font-size: 13px;
     color: #343434;
     margin: 0px;
-    padding: 25px 0px;
-    text-align: center;
     font-weight: 400;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-footer p em {
-    font-style: normal;
-    font-weight: 500;
+footer .footer img {
+    height: 50px;
+    padding: 5px 5px;
+    margin-bottom: -10px;
 }
 
-footer a {
-    color: #343434;
+footer .social-icons {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+    justify-content: space-between;
+}
+
+footer .social-icons a {
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #fff;
+    background-color: #008DB9;
+    padding: 10px;
+    width: 40px;
+    border-radius: 60px;
+    margin-bottom: -10px;
+}
+
+footer .social-icons a:hover {
+    background-color: #121212;
+    color: #008DB9;
 }
 
 
@@ -1284,7 +1304,7 @@ body.lb-disable-scrolling {
     /*Hiddenbydefault*/
     position: fixed;
     /*Fixed/stickyposition*/
-    bottom: 20px;
+    bottom: 29px;
     /*Placethebuttonatthebottomofthepage*/
     left: 30px;
     /*Placethebutton30pxfromtheright*/
@@ -1294,32 +1314,18 @@ body.lb-disable-scrolling {
     /*Removeborders*/
     outline: none;
     /*Removeoutline*/
-    background-color: #999999;
+    background-color: #008DB9;
     /*Setabackgroundcolor*/
-    color: white;
-    /*Textcolor*/
     cursor: pointer;
     /*Addamousepointeronhover*/
     padding: 11px;
     /*Somepadding*/
-    border-radius: 54px;
+    border-radius: 25px;
     /*Roundedcorners*/
-    font-size: 18px;
-    /*Increasefontsize*/
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 54px;
-    -ms-border-radius: 54px;
-    -o-border-radius: 54px;
-    -webkit-border-radius: 54px;
 }
 
 #myBtn img {
-    width: 25px;
-}
-
-#myBtn:hover {
-    background-color: #555;
-    /* Add a dark-grey background on hover */
+    width: 20px;
 }
 
 
