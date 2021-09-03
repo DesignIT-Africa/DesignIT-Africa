@@ -40,44 +40,51 @@
     <section class="cd-hero">
         <div class="cd-slider-nav">
             <div class="toggle">
-                <center><h1><a href=".">DesignITAfrica</a></h1></center>
+                <center>
+                    <div- class="ham-img">
+                        <img src="img/designit.png" alt="DesignIT Africa">
+                    </div->
+                </center>
                 <nav style="display: block;">
                     <center>
-                    <ul id="hamDIV" style="display: block;">
-                    <li class="btn hactive">
-                        <a href="#0" onclick="close_ham()">
-                            <h6 id="dif-color"><strong>About Us</strong></h6>
-                        </a>
-                    </li>
-                    <li class="btn">
-                        <a href="#0" onclick="close_ham()">
-                            <h6 id="dif-color"><strong>Meet the Gamechangers</strong></h6>
-                        </a>
-                    </li>
-                    <li class="btn">
-                        <a href="#0" onclick="close_ham()">
-                            <h6 id="dif-color"><strong>Blog</strong></h6>
-                        </a>
-                    </li>
-                    <li class="btn">
-                        <a href="#0" onclick="close_ham()">
-                            <h6 id="dif-color"><strong>Join the Family</strong></h6>
-                        </a>
-                    </li>
-                    <li class="btn" onclick="close_ham()">
-                        <a href="#0">
-                            <h6 id="dif-color"><strong>Reach Out</strong></h6>
-                        </a>
-                    </li>
+                        <ul id="hamDIV" style="display: block;">
+                            <li class="btn hactive">
+                                <a href="#0" onclick="close_ham()">
+                                    <h6 id="dif-color"><strong>About Us</strong></h6>
+                                </a>
+                            </li>
+                            <li class="btn">
+                                <a href="#0" onclick="close_ham()">
+                                    <h6 id="dif-color"><strong>Meet the Gamechangers</strong></h6>
+                                </a>
+                            </li>
+                            <li class="btn">
+                                <a href="#0" onclick="close_ham()">
+                                    <h6 id="dif-color"><strong>Blog</strong></h6>
+                                </a>
+                            </li>
+                            <li class="btn">
+                                <a href="#0" onclick="close_ham()">
+                                    <h6 id="dif-color"><strong>Join the Family</strong></h6>
+                                </a>
+                            </li>
+                            <li class="btn" onclick="close_ham()">
+                                <a href="#0">
+                                    <h6 id="dif-color"><strong>Reach Out</strong></h6>
+                                </a>
+                            </li>
+                        </ul>
+                    </center>
+                </nav>
+                <ul class="social-icons social">
+                    <a href="https://www.facebook.com/designinfotech"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.twitter.com/DesignITAfrica"><i class="fa fa-twitter"></i></a>
+                    <a href="linkedin.com/company/designit-africa"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://wa.me/2348087869811"><i class="fa fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/designit_africa"><i class="fa fa-instagram"></i></a>
+                    <a href="https://github.com/DesignIT-Africa"><i class="fa fa-github"></i></a>
                 </ul>
-            </center>
-        </nav>
-                <ul class="social">
-                  <li><a href="#"><i class="fa fa-github"></i></a></li>
-                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                 <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
-                </ul>
-              </div>
+            </div>
             <nav>
                 <logo>
                     <a href="#"><img src="img/designit.png" alt="DesignIT Africa"></a>
@@ -626,11 +633,11 @@
         <!-- .cd-hero-slider -->
     </section>
     <!-- .cd-hero -->
-    
+
 
     <footer>
         <div class="footer">
-            <ul class="social-icons">
+            <ul class="social-icons long-view">
                 <a href="https://www.facebook.com/designinfotech"><i class="fa fa-facebook"></i></a>
                 <a href="https://www.twitter.com/DesignITAfrica"><i class="fa fa-twitter"></i></a>
                 <a href="linkedin.com/company/designit-africa"><i class="fa fa-linkedin"></i></a>
@@ -638,6 +645,17 @@
                 <a href="https://wa.me/2348087869811"><i class="fa fa-whatsapp"></i></a>
                 <a href="https://www.instagram.com/designit_africa"><i class="fa fa-instagram"></i></a>
                 <a href="https://github.com/DesignIT-Africa"><i class="fa fa-github"></i></a>
+            </ul>
+            <ul class="social-icons mobile-footer">
+                <img src="img/designit.png" alt="DesignIT Africa">
+                <div class="social-codes">
+                    <a href="https://www.facebook.com/designinfotech"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.twitter.com/DesignITAfrica"><i class="fa fa-twitter"></i></a>
+                    <a href="linkedin.com/company/designit-africa"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://wa.me/2348087869811"><i class="fa fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/designit_africa"><i class="fa fa-instagram"></i></a>
+                    <a href="https://github.com/DesignIT-Africa"><i class="fa fa-github"></i></a>
+                </div>
             </ul>
             <div class="mobile-foot">
                 <p>&#169;2021 DesignIT Africa</p>
@@ -661,14 +679,15 @@
         });
     </script>
     <script>
-      function ham() {
+        function ham() {
             $('.navicon').toggleClass('navicon--active');
             $('.toggle').toggleClass('toggle--active');
-          }
-          function close_ham(){
-              ham();
-          }
-          </script>
+        }
+
+        function close_ham() {
+            ham();
+        }
+    </script>
 </body>
 
 </html>
