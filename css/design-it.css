@@ -1504,6 +1504,7 @@ body.lb-disable-scrolling {
     #myBtn {
         padding: 7px;
         bottom: 7px;
+        left: 10px;
     }
 }
 
