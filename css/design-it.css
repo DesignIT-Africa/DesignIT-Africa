@@ -1535,21 +1535,17 @@ body.lb-disable-scrolling {
     padding: 20px 0px;
 }
 
-#direction-fade {
+#fade {
     display: none;
 }
 
-#direction-fade p {
+#fade p {
     color: #fff;
     background-color: #5a5a5a;
     padding: 3px 8px;
     border-radius: 23px;
     text-align: center;
     margin-top: 15px;
-}
-
-.primary-button:hover+#direction-fade {
-    display: block;
 }
 
 .margin-needed {
