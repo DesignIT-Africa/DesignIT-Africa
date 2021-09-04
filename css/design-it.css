@@ -215,7 +215,7 @@ video::-webkit-media-controls {
         left: 0;
         transition: 0.8s ease;
         width: 30px;
-        border-radius: 50%;
+        border-radius: 20%;
     }
     .navicon:before {
         box-shadow: #008DB9 0 10px 0 0;
