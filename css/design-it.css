@@ -1075,7 +1075,7 @@ footer {
     background-color: #dad5d5;
     position: relative;
     text-align: center;
-    padding-bottom: 1px;
+    padding-bottom: 10px;
     padding-top: 4px;
 }
 
@@ -1118,48 +1118,48 @@ footer .social-icons a:hover {
     color: #008DB9;
 }
 
-footer .mobile-footer {
+footer .mobile-view {
     display: none;
 }
 
-@media screen and (max-width: 900px) {
-    footer .long-view {
-        display: none;
+@media (max-width: 690px) {
+    footer {
+        padding-bottom: 1px;
     }
-    footer .mobile-footer {
+    footer .mobile-view {
         display: block;
     }
-    footer .footer img {
-        margin-bottom: 15px;
+    footer .desktop-view {
+        display: none;
     }
-    footer .social-icons {
-        margin: 0px;
-        width: 100%;
+    footer .mobile-block {
+        display: block;
     }
-    footer .social-codes {
-        margin-left: auto;
+    footer .social-one,
+    footer .social-two {
+        margin-bottom: 10px;
+        display: flex;
         margin-right: auto;
-        width: 70%;
-        margin-bottom: 15px;
+        margin-left: auto;
+        width: 50%;
+        justify-content: space-between;
     }
-    footer .social-codes a {
+    footer .mobile-block a:hover {
+        background-color: #121212;
+        color: #008DB9;
+    }
+    footer .mobile-block a {
+        margin-top: auto;
+        margin-bottom: auto;
+        color: #fff;
+        background-color: #008DB9;
         padding: 10px;
-        margin-bottom: 0px;
-        margin-left: 12px;
+        width: 40px;
+        border-radius: 60px;
     }
-}
-
-@media screen and (max-width: 440px) {
-    footer .social-codes {
-        justify-content: space-evenly;
-    }
-    footer .social-codes a {
-        margin: 0px;
-        margin-right: 15px;
-        margin-bottom: 0px;
-    }
-    footer .social-codes:nth-child(6) {
-        margin-right: 0px;
+    footer .foot-icon img {
+        margin-left: 3px;
+        margin-bottom: 1px;
     }
 }
 
@@ -1476,7 +1476,7 @@ body.lb-disable-scrolling {
     /*Hiddenbydefault*/
     position: fixed;
     /*Fixed/stickyposition*/
-    bottom: 29px;
+    bottom: 30px;
     /*Placethebuttonatthebottomofthepage*/
     left: 30px;
     /*Placethebutton30pxfromtheright*/
@@ -1490,14 +1490,21 @@ body.lb-disable-scrolling {
     /*Setabackgroundcolor*/
     cursor: pointer;
     /*Addamousepointeronhover*/
-    padding: 11px;
+    padding: 7px;
     /*Somepadding*/
     border-radius: 25px;
     /*Roundedcorners*/
 }
 
 #myBtn img {
-    width: 20px;
+    width: 25px;
+}
+
+@media (max-width: 479px) {
+    #myBtn {
+        padding: 7px;
+        bottom: 7px;
+    }
 }
 
 
