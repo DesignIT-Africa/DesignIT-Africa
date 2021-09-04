@@ -532,13 +532,6 @@ video::-webkit-media-controls {
     margin-top: 25px;
 }
 
-@media screen and (min-width: 1200px) {
-    .squad-list {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
 .member-item {
     overflow: hidden;
     height: auto;
@@ -755,7 +748,8 @@ li .linkedin-fade {
 }
 
 .third-content {
-    padding: 30px;
+    padding: 0px;
+    padding-bottom: 20px;
 }
 
 .third-content .left-image img {
@@ -1614,7 +1608,7 @@ body.lb-disable-scrolling {
 }
 
 .third-section-team {
-    display: flex;
+    display: block;
 }
 
 .volunteer-direction img {
@@ -1623,4 +1617,19 @@ body.lb-disable-scrolling {
 
 .cd-slider-nav {
     color: #121212;
+}
+
+@media screen and (min-width: 1000px) {
+    .squad-list {
+        display: block;
+    }
+    .squad-list .third-section-team {
+        display: flex;
+    }
+    .squad-list .first-team-item {
+        display: flex;
+    }
+    .exception {
+        width: 50%;
+    }
 }
