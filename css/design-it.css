@@ -186,6 +186,16 @@ video::-webkit-media-controls {
     #myDIV {
         display: none;
     }
+    #round_ham{
+        display: inline-block;
+        width: 35px;
+        height: 32px;
+        margin-top: 20px;
+        margin-right: 30px;
+        border-radius: 10px;
+        /*border-width:1px; border-color: #008DB9; border-style: solid;
+   */
+    }
     .toggle {
         display: block;
     }
@@ -193,11 +203,8 @@ video::-webkit-media-controls {
         display: inline;
         width: 25px;
         height: 10px;
-        margin-top: 20px;
-        margin-right: 30px;
         float: right;
-        border: none;
-    }
+          }
     .navicon {
         background: transparent;
         padding-bottom: 32px;
@@ -216,6 +223,7 @@ video::-webkit-media-controls {
         left: 0;
         transition: 0.8s ease;
         width: 30px;
+        border-radius: 100%;
     }
     .navicon:before {
         box-shadow: #008DB9 0 10px 0 0;
