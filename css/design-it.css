@@ -1080,12 +1080,17 @@ footer {
 }
 
 footer p {
+    text-align: center;
     font-size: 13px;
     color: #343434;
     margin: 0px;
     font-weight: 400;
     margin-top: auto;
     margin-bottom: auto;
+}
+
+footer .footer {
+    margin-right: 50px;
 }
 
 footer .footer img {
@@ -1125,6 +1130,7 @@ footer .mobile-view {
 @media (max-width: 690px) {
     footer {
         padding-bottom: 1px;
+        text-align: center;
     }
     footer .mobile-view {
         display: block;
@@ -1160,6 +1166,10 @@ footer .mobile-view {
     footer .foot-icon img {
         margin-left: 3px;
         margin-bottom: 1px;
+    }
+    footer p {
+        text-align: center;
+        margin-left: 50px;
     }
 }
 
