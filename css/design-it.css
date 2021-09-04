@@ -175,6 +175,14 @@ video::-webkit-media-controls {
 }
 
 @media screen and (max-width: 1050px) {
+    .cd-slider-nav{
+        position: fixed;
+        z-index: 99999999999999999;
+        width: 100%;
+    }
+    .cd-hero-slider .selected{
+    padding-top: 60px;
+    }
     #myDIV {
         display: none;
     }
