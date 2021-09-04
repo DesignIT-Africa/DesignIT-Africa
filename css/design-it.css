@@ -1147,7 +1147,7 @@ footer .mobile-view {
         display: flex;
         margin-right: auto;
         margin-left: auto;
-        width: 50%;
+        width: 70%;
         justify-content: space-between;
     }
     footer .mobile-block a:hover {
@@ -1169,7 +1169,7 @@ footer .mobile-view {
     }
     footer p {
         text-align: center;
-        margin-left: 50px;
+        margin-left: 60px;
     }
 }
 
