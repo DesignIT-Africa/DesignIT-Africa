@@ -400,15 +400,23 @@ video::-webkit-media-controls {
     margin-top: 30px;
 }
 
+.counter-box {
+    margin-top: -80px;
+    background-color: #fff;
+    padding: 0px 0px 120px 0px;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+@media screen and (ma-width: 766px) {}
+
 .counters {
     background: #008DB9;
     color: #fff;
     padding: 40px 0px;
-    border-top: 3px lightskyblue solid;
 }
 
 .counters .container {
-    display: flexbox;
     text-align: center;
 }
 
@@ -437,13 +445,37 @@ video::-webkit-media-controls {
 }
 
 @media screen and (min-width: 766px) {
+    .counters .container>div:nth-of-type(1),
+    .counters .container>div:nth-of-type(2),
+    .counters .container>div:nth-of-type(3) {
+        border-bottom: 1px lightskyblue solid;
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+    .counters .container>div:nth-of-type(2),
+    .counters .container>div:nth-of-type(3),
+    .counters .container>div:nth-of-type(4) {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
     .counters .container {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        margin: 0px -30px 0px -30px;
     }
-    .counters {
-        display: flex;
-        justify-content: space-evenly;
+    .counters .container>div:nth-of-type(1),
+    .counters .container>div:nth-of-type(2),
+    .counters .container>div:nth-of-type(3) {
+        border-bottom: none;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .counters .container>div:nth-of-type(2),
+    .counters .container>div:nth-of-type(3),
+    .counters .container>div:nth-of-type(4) {
+        padding-top: 0px;
     }
 }
 
@@ -515,8 +547,8 @@ video::-webkit-media-controls {
 
 .second-slide .left-about-text {
     text-align: left;
-    margin-left: 15px;
-    margin-left: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .second-slide .left-about-text h4 {
@@ -747,11 +779,6 @@ li .linkedin-fade {
     display: block;
 }
 
-.third-content {
-    padding: 0px;
-    padding-bottom: 20px;
-}
-
 .third-content .left-image img {
     width: 100%;
     overflow: hidden;
@@ -782,7 +809,7 @@ li .linkedin-fade {
 
 .third-content .right-feature-text {
     text-align: left;
-    margin: 0px 15px 0px 15px;
+    margin: 0px 15px 14px 15px;
 }
 
 .third-content .right-feature-text .primary-button {
@@ -1135,35 +1162,15 @@ footer .mobile-view {
     footer .mobile-block {
         display: block;
     }
-    footer .social-one,
-    footer .social-two {
-        margin-bottom: 10px;
-        display: flex;
-        margin-right: auto;
-        margin-left: auto;
-        width: 70%;
-        justify-content: space-between;
-    }
-    footer .mobile-block a:hover {
-        background-color: #121212;
-        color: #008DB9;
-    }
-    footer .mobile-block a {
-        margin-top: auto;
-        margin-bottom: auto;
-        color: #fff;
-        background-color: #008DB9;
-        padding: 10px;
-        width: 40px;
-        border-radius: 60px;
-    }
     footer .foot-icon img {
         margin-left: 3px;
         margin-bottom: 1px;
     }
     footer p {
+        margin-top: -10px;
         text-align: center;
-        margin-left: 60px;
+        margin-left: 40px;
+        margin-bottom: 10px;
     }
 }
 
@@ -1498,6 +1505,7 @@ body.lb-disable-scrolling {
     /*Somepadding*/
     border-radius: 25px;
     /*Roundedcorners*/
+    box-shadow: 1px 0px 1px 1px #121212;
 }
 
 #myBtn img {
@@ -1519,14 +1527,9 @@ body.lb-disable-scrolling {
     margin-bottom: 34px;
 }
 
-#number-logo,
-#number-logo1,
-#number-logo2 {
+.counters img {
     width: 100px;
-}
-
-#number-logo {
-    padding: 20px 0px;
+    margin-bottom: 10px;
 }
 
 #fade {
