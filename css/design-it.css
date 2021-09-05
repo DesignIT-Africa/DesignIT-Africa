@@ -175,6 +175,14 @@ video::-webkit-media-controls {
 }
 
 @media screen and (max-width: 1050px) {
+    .cd-slider-nav{
+        position: fixed;
+        z-index: 99999999999999999;
+        width: 100%;
+    }
+    .cd-hero-slider .selected{
+    padding-top: 60px;
+    }
     #myDIV {
         display: none;
     }
@@ -184,12 +192,11 @@ video::-webkit-media-controls {
     #ico {
         display: inline;
         width: 25px;
-        height: 25px;
-        margin-top: 10px;
+        height: 10px;
+        margin-top: 20px;
         margin-right: 30px;
         float: right;
-        border: none;
-    }
+          }
     .navicon {
         background: transparent;
         padding-bottom: 32px;
@@ -207,16 +214,17 @@ video::-webkit-media-controls {
         height: 3px;
         left: 0;
         transition: 0.8s ease;
-        width: 35px;
+        width: 30px;
+        border-radius: 20%;
     }
     .navicon:before {
-        box-shadow: #008DB9 0 14px 0 0;
+        box-shadow: #008DB9 0 10px 0 0;
         position: absolute;
         top: 0;
     }
     .navicon:after {
         position: absolute;
-        top: 28px;
+        top: 20px;
     }
     .navicon--active {
         margin-top: 20px;
