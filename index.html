@@ -68,7 +68,7 @@
                                     <h6 id="dif-color"><strong>Join the Family</strong></h6>
                                 </a>
                             </li>
-                            <li class="btn" onclick="close_ham()">
+                            <li class="btn" id="hcontact" onclick="close_ham()">
                                 <a href="#0">
                                     <h6 id="dif-color"><strong>Reach Out</strong></h6>
                                 </a>
@@ -111,7 +111,7 @@
                             <h6 id="dif-color"><strong>Join the Family</strong></h6>
                         </a>
                     </li>
-                    <li class="btn">
+                    <li class="btn" id="contact">
                         <a href="#0">
                             <h6 id="dif-color"><strong>Reach Out</strong></h6>
                         </a>
@@ -220,7 +220,7 @@
                                                 </div>
                                                 <div class="patronize-button">
                                                     <div class="primary-button">
-                                                        <a href="https://wa.me/message/URSCOQVKBZIHO1" class="pitch">Patronize Us</a>
+                                                        <a onclick="patronize()" class="pitch">Patronize Us</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -680,6 +680,27 @@
 
         function close_ham() {
             ham();
+        }
+
+        function patronize() {
+            if ($('.navicon').css('display') == 'none') {
+                $('#contact').click();
+                var btnContainer = document.getElementById("myDIV");
+                var current = document.getElementsByClassName("active");
+                if (current.length > 0) {
+                    current[0].className = current[0].className.replace(" active", "");
+                }
+                btnContainer.getElementsByClassName("btn")[4].className += " active";
+            } else {
+                $('#hcontact').click();
+                $('.navicon').click();
+                var btnContainer2 = document.getElementById("hamDIV");
+                var current2 = document.getElementsByClassName("hactive");
+                if (current2.length > 0) {
+                    current2[0].className = current2[0].className.replace(" hactive", "");
+                }
+                btnContainer2.getElementsByClassName("btn")[4].className += " hactive";
+            }
         }
     </script>
 </body>
