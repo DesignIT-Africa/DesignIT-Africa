@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="img/favicon.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <meta property="og:title" content="DesignITAfrica" />
+    <meta property="og:title" content="DesignIT Africa" />
     <meta property="og:description" content="DesignIT Africa is a gen Z tech org whose keen interest lies in equipping teenagers with digital skills needed to thrive in the 21st century. These teenagers grow further in life to become change agents in their communities utilizing the skills they learn from the organization."
     />
     <meta property="og:image" content="img/favicon.png" />
@@ -68,7 +68,7 @@
                                     <h6 id="dif-color"><strong>Join the Family</strong></h6>
                                 </a>
                             </li>
-                            <li class="btn" id="hcontact" onclick="close_ham()">
+                            <li class="btn" onclick="close_ham()">
                                 <a href="#0">
                                     <h6 id="dif-color"><strong>Reach Out</strong></h6>
                                 </a>
@@ -111,7 +111,7 @@
                             <h6 id="dif-color"><strong>Join the Family</strong></h6>
                         </a>
                     </li>
-                    <li class="btn" id="contact">
+                    <li class="btn">
                         <a href="#0">
                             <h6 id="dif-color"><strong>Reach Out</strong></h6>
                         </a>
@@ -220,7 +220,7 @@
                                                 </div>
                                                 <div class="patronize-button">
                                                     <div class="primary-button">
-                                                        <a onclick="patronize()" class="pitch">Patronize Us</a>
+                                                        <a href="https://wa.me/message/URSCOQVKBZIHO1" class="pitch">Patronize Us</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -680,27 +680,6 @@
 
         function close_ham() {
             ham();
-        }
-
-        function patronize() {
-            if($('.navicon').css('display') == 'none'){
-                $('#contact').click();
-                var btnContainer = document.getElementById("myDIV");
-                var current = document.getElementsByClassName("active");
-                if (current.length > 0) {
-                    current[0].className = current[0].className.replace(" active", "");
-                }
-                btnContainer.getElementsByClassName("btn")[4].className += " active";
-            }else{
-                $('#hcontact').click();
-                $('.navicon').click();
-                var btnContainer2 = document.getElementById("hamDIV");
-                var current2 = document.getElementsByClassName("hactive");
-                if (current2.length > 0) {
-                    current2[0].className = current2[0].className.replace(" hactive", "");
-                }
-                btnContainer2.getElementsByClassName("btn")[4].className += " hactive";
-            }
         }
     </script>
 </body>
