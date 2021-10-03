@@ -6,15 +6,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="description" content="DesignIT Africa is a gen Z tech org whose keen interest lies in equipping teenagers with digital skills needed to thrive in the 21st century. These teenagers grow further in life to become change agents in their communities utilizing the skills they learn from the organization.">
-    <meta name="keywords" content="GenZ, technology, organization, teenagers">
+    <meta name="keywords" content="designit, Designit, DesignIT africa, DesignIT, DesignIT Africa, GenZ, technology, organization, teenagers">
     <title>DesignIT Africa</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="img/favicon.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <meta property="og:title" content="DesignITAfrica" />
-    <meta property="og:description" content="DesignIT Africa is a gen Z tech org whose keen interest lies in equipping teenagers with digital skills needed to thrive in the 21st century. These teenagers grow further in life to become change agents in their communities utilizing the skills they learn from the organization." />
+    <meta property="og:title" content="DesignIT Africa" />
+    <meta property="og:description" content="DesignIT Africa is a gen Z tech org whose keen interest lies in equipping teenagers with digital skills needed to thrive in the 21st century. These teenagers grow further in life to become change agents in their communities utilizing the skills they learn from the organization."
+    />
     <meta property="og:image" content="img/favicon.png" />
     <meta property="og:url" content="https://designitafrica.org" />
     <meta property="og:type" content="website" />
@@ -36,44 +37,87 @@
           Your browser does not support the video tag.
         </video>
     </section>
-
     <section class="cd-hero">
-
         <div class="cd-slider-nav">
+            <div class="toggle">
+                <center>
+                    <div- class="ham-img">
+                        <img src="img/designit.png" alt="DesignIT Africa">
+                    </div->
+                </center>
+                <nav style="display: block;">
+                    <center>
+                        <ul id="hamDIV" style="display: block;">
+                            <li class="btn hactive">
+                                <a href="#0" onclick="close_ham()">
+                                    <h6 id="dif-color"><strong>About Us</strong></h6>
+                                </a>
+                            </li>
+                            <li class="btn">
+                                <a href="#0" onclick="close_ham()">
+                                    <h6 id="dif-color"><strong>Meet the Gamechangers</strong></h6>
+                                </a>
+                            </li>
+                            <li class="btn">
+                                <a href="#0" onclick="close_ham()">
+                                    <h6 id="dif-color"><strong>Blog</strong></h6>
+                                </a>
+                            </li>
+                            <li class="btn">
+                                <a href="#0" onclick="close_ham()">
+                                    <h6 id="dif-color"><strong>Join the Family</strong></h6>
+                                </a>
+                            </li>
+                            <li class="btn" onclick="close_ham()">
+                                <a href="#0">
+                                    <h6 id="dif-color"><strong>Reach Out</strong></h6>
+                                </a>
+                            </li>
+                        </ul>
+                    </center>
+                </nav>
+                <ul class="social-icons social">
+                    <a href="https://www.facebook.com/designinfotech"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.twitter.com/DesignITAfrica"><i class="fa fa-twitter"></i></a>
+                    <a href="linkedin.com/company/designit-africa"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://wa.me/2348087869811"><i class="fa fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/designit_africa"><i class="fa fa-instagram"></i></a>
+                    <a href="https://github.com/DesignIT-Africa"><i class="fa fa-github"></i></a>
+                </ul>
+            </div>
             <nav>
-                <span class="cd-marker item-1"></span>
-                <ul>
-                    <li class="selected">
+                <logo>
+                    <a href="#"><img src="img/designit.png" alt="DesignIT Africa"></a>
+                </logo>
+                <a href="#" class="navicon" id="ico" onclick="ham()"></a>
+                <ul id="myDIV">
+                    <li class="btn active">
                         <a href="#0">
-                            <div class="image-icon"><img src="img/home-icon.png" alt="Home/About Us"></div>
-                            <h6><strong>About Us</strong></h6>
+                            <h6 id="dif-color"><strong>About Us</strong></h6>
                         </a>
                     </li>
-                    <li>
+                    <li class="btn">
                         <a href="#0">
-                            <div class="image-icon move-right"><img src="img/about-icon.png" alt="Meet the Gamechangers"></div>
-                            <h6><strong>Meet the <br />Gamechangers</strong></h6>
+                            <h6 id="dif-color"><strong>Meet the Gamechangers</strong></h6>
                         </a>
                     </li>
-                    <li>
+                    <li class="btn">
                         <a href="#0">
-                            <div class="image-icon"><img src="img/featured-icon.png" alt="Blog"></div>
-                            <h6><strong>Blog</strong></h6>
+                            <h6 id="dif-color"><strong>Blog</strong></h6>
                         </a>
                     </li>
-                    <li>
+                    <li class="btn">
                         <a href="#0">
-                            <div class="image-icon move-right"><img src="img/projects-icon.png" alt="Join The Family"></div>
-                            <h6><strong>Join the Family</strong></h6>
+                            <h6 id="dif-color"><strong>Join the Family</strong></h6>
                         </a>
                     </li>
-                    <li>
+                    <li class="btn">
                         <a href="#0">
-                            <div class="image-icon"><img src="img/contact-icon.png" alt="Reach Out"></div>
-                            <h6><strong>Reach Out</strong></h6>
+                            <h6 id="dif-color"><strong>Reach Out</strong></h6>
                         </a>
                     </li>
                 </ul>
+
             </nav>
         </div>
         <!-- .cd-slider-nav -->
@@ -82,8 +126,8 @@
 
             <li class="selected">
                 <div class="heading">
-                    <a href="index.html"><img src="img/designit.png" alt="DesignIT Africa Logo" class="org-logo"></a>
-                    <span id="slogan-main" class="slogan-main"><strong>We raise empathetic tech enthusiasts</strong></span>
+                    <h1>About Us</h1>
+                    <span>Who are we and what do we do.</span>
                 </div>
                 <div class="cd-half-width second-slide">
                     <div class="container">
@@ -126,6 +170,34 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="counter-box">
+                    <section class="counters" onload="allcount()">
+                        <div class="container">
+                            <div>
+                                <img src="images/students.png" alt="Students impacted" id="number-logo">
+                                <div class="counter" data-target="500">500 </div>
+                                <h3>Students impacted</h3>
+                            </div>
+                            <div>
+                                <img src="images/client.png" alt="clients served" id="number-logo1">
+                                <div class="counter" data-target="43">43</div>
+                                <h3>Served Clients</h3>
+                            </div>
+                            <div>
+                                <img src="images/org.png" alt="organization" id="number-logo2">
+                                <div class="counter" data-target="15">15</div>
+                                <h3>Organizations in<br> partnership</h3>
+                            </div>
+                            <div>
+                                <img src="images/volunteer.png" alt="volunteers" id="number-logo3">
+                                <div class="counter" data-target="9">9</div>
+                                <h3>Volunteers</h3>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
                 <div class="cd-half-width third-slide">
                     <div class="container">
                         <div class="row">
@@ -148,46 +220,11 @@
                                                 </div>
                                                 <div class="patronize-button">
                                                     <div class="primary-button">
-                                                        <a class="pitch">Patronize Us</a>
-                                                    </div>
-                                                    <div id="direction-fade">
-                                                        <p>Scroll up and click on the phone icon. Contact us.</p>
+                                                        <a href="https://wa.me/message/URSCOQVKBZIHO1" class="pitch">Patronize Us</a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cd-half-width third-slide">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="content third-content">
-                                    <div class="row">
-                                        <section class="counters" onload="allcount()">
-                                            <div class="container">
-                                                <div>
-                                                    <img src="images/students.png" alt="Students impacted" id="number-logo">
-                                                    <div class="counter" data-target="500">500 </div>
-                                                    <h3>Students impacted</h3>
-                                                </div>
-                                                <div>
-                                                    <img src="images/client.png" alt="clients served" id="number-logo1">
-                                                    <div class="counter" data-target="43">43</div>
-                                                    <h3>Served Clients</h3>
-                                                </div>
-                                                <div>
-                                                    <img src="images/org.png" alt="organization" id="number-logo2">
-                                                    <div class="counter" data-target="15">15</div>
-                                                    <h3>Organizations in partnership</h3>
-                                                </div>
-                                            </div>
-                                        </section>
-
                                     </div>
                                 </div>
                             </div>
@@ -208,62 +245,64 @@
                                 <div class="content fivth-content">
                                     <div class="row">
                                         <div class="squad-list">
-                                            <div class="member-item">
-                                                <div class="member-thumb">
-                                                    <img src="images/alli.jpeg" alt="Alli Ajagbe">
-                                                    <div class="overlay">
-                                                        <ul class="social-member">
-                                                            <li class="facebook-fade">
-                                                                <a href="https://www.facebook.com/alli.abdulhakeem.1"><i class="fa fa-facebook"></i></a>
-                                                            </li>
-                                                            <li class="twitter-fade">
-                                                                <a href="https://twitter.com/alliajagbe"><i class="fa fa-twitter"></i></a>
-                                                            </li>
-                                                            <li class="instagram-fade">
-                                                                <a href="https://instagram.com/alliajagbe"><i class="fa fa-instagram"></i></a>
-                                                            </li>
-                                                            <li class="linkedin-fade">
-                                                                <a href="https://linkedin.com/in/alli-ajagbe-562374174"><i class="fa fa-linkedin"></i></a>
-                                                            </li>
-                                                        </ul>
-                                                        <div class="content-fade">
-                                                            <p class="content-true">Hey there, <br>I am Alli Ajagbe; a graphic designer, digital marketer (...and a programmer too). I am a lover of culture and politics.<br> Not to brag but I consider myself a humorous person
-                                                                too. Reach out to confirm.</p>
+                                            <div class="first-team-item">
+                                                <div class="member-item">
+                                                    <div class="member-thumb">
+                                                        <img src="images/alli.jpeg" alt="Alli Ajagbe">
+                                                        <div class="overlay">
+                                                            <ul class="social-member">
+                                                                <li class="facebook-fade">
+                                                                    <a href="https://www.facebook.com/alli.abdulhakeem.1"><i class="fa fa-facebook"></i></a>
+                                                                </li>
+                                                                <li class="twitter-fade">
+                                                                    <a href="https://twitter.com/alliajagbe"><i class="fa fa-twitter"></i></a>
+                                                                </li>
+                                                                <li class="instagram-fade">
+                                                                    <a href="https://instagram.com/alliajagbe"><i class="fa fa-instagram"></i></a>
+                                                                </li>
+                                                                <li class="linkedin-fade">
+                                                                    <a href="https://linkedin.com/in/alli-ajagbe-562374174"><i class="fa fa-linkedin"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                            <div class="content-fade">
+                                                                <p class="content-true">Hey there, <br>I am Alli Ajagbe; a graphic designer, digital marketer (...and a programmer too). I am a lover of culture and politics.<br> Not to brag but I consider myself a humorous person
+                                                                    too. Reach out to confirm.</p>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="member-content">
-                                                    <h4>Alli Ajagbe</h4>
-                                                    <p>Founder and Executive Director</p>
-                                                </div>
-                                            </div>
-                                            <div class="member-item">
-                                                <div class="member-thumb">
-                                                    <img src="images/bolaji.jpg" alt="Bolaji Oladejo">
-                                                    <div class="overlay">
-                                                        <ul class="social-member">
-                                                            <li class="facebook-fade">
-                                                                <a href="https://www.facebook.com/bolajimuhammed.oladejo"><i class="fa fa-facebook"></i></a>
-                                                            </li>
-                                                            <li class="twitter-fade">
-                                                                <a href="https://twitter.com/Bolajioladejo4?s=09"><i class="fa fa-twitter"></i></a>
-                                                            </li>
-                                                            <li class="instagram-fade">
-                                                                <a href="https://www.instagram.com/bolaji.oladejo"><i class="fa fa-instagram"></i></a>
-                                                            </li>
-                                                            <li class="linkedin-fade">
-                                                                <a href="https://www.linkedin.com/in/bolaji-oladejo-aa7164183"><i class="fa fa-linkedin"></i></a>
-                                                            </li>
-                                                        </ul>
-                                                        <div class="content-fade">
-                                                            <p class="content-true">Hey there, I'm Bolaji Oladejo but you can call me Beejay.<br> I'm a gen Z teen and I have keen interest in tech, education, entrepreneurship and leaershhip. <br> Not a big fan of music but my
-                                                                love for Burna Boy isn't from here. Be good!</p>
-                                                        </div>
+                                                    <div class="member-content">
+                                                        <h4>Alli Ajagbe</h4>
+                                                        <p>Founder and Executive Director</p>
                                                     </div>
                                                 </div>
-                                                <div class="member-content">
-                                                    <h4>Bolaji Oladejo</h4>
-                                                    <p>Lead, Resource Management</p>
+                                                <div class="member-item">
+                                                    <div class="member-thumb">
+                                                        <img src="images/bolaji.jpg" alt="Bolaji Oladejo">
+                                                        <div class="overlay">
+                                                            <ul class="social-member">
+                                                                <li class="facebook-fade">
+                                                                    <a href="https://www.facebook.com/bolajimuhammed.oladejo"><i class="fa fa-facebook"></i></a>
+                                                                </li>
+                                                                <li class="twitter-fade">
+                                                                    <a href="https://twitter.com/Bolajioladejo4?s=09"><i class="fa fa-twitter"></i></a>
+                                                                </li>
+                                                                <li class="instagram-fade">
+                                                                    <a href="https://www.instagram.com/bolaji.oladejo"><i class="fa fa-instagram"></i></a>
+                                                                </li>
+                                                                <li class="linkedin-fade">
+                                                                    <a href="https://www.linkedin.com/in/bolaji-oladejo-aa7164183"><i class="fa fa-linkedin"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                            <div class="content-fade">
+                                                                <p class="content-true">Hey there, I'm Bolaji Oladejo but you can call me Beejay.<br> I'm a gen Z teen and I have keen interest in tech, education, entrepreneurship and leaershhip. <br> Not a big fan of music but
+                                                                    my love for Burna Boy isn't from here. Be good!</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="member-content">
+                                                        <h4>Bolaji Oladejo</h4>
+                                                        <p>Lead, Resource Management</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="exception" style="display: block; margin-right: auto; margin-left: auto;">
@@ -297,7 +336,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="third-section-team" style="display: flex;">
+                                            <div class="third-section-team">
                                                 <div class="member-item">
                                                     <div class="member-thumb">
                                                         <img class="bukola-img" src="images/bukola.jpg" alt="Bukola Olapade">
@@ -503,8 +542,8 @@
                                                 <div class="recruit-head">
                                                     <h4>Voluteer</h4>
                                                     <div class="embeded-contact">
-                                                        <div class="cui-embed" data-cui-uid="hj08s0D2" data-cui-avatar="https://images.typeform.com/images/LTcUf5thkhhc" data-cui-mode="pill" data-cui-pill-button-color="#0000FF"></div>
-                                                        <script src="https://public-assets.typeform.com/confab/embed.js" async></script>
+                                                        <div data-tf-popover="hj08s0D2" data-tf-button-color="#008DB9" data-tf-notification-days="9" data-tf-tooltip="Want to join us? Over here!" data-tf-chat style="all:unset;"></div>
+                                                        <script src="//embed.typeform.com/next/embed.js"></script>
                                                     </div>
                                                     <div class="volunteer-direction">
                                                         <div class="v-container">
@@ -592,10 +631,33 @@
 
 
     <footer>
-        <p>Copyright &copy; 2021 DesignIT Africa</p>
+        <div class="footer desktop-view">
+            <ul class="social-icons long-view">
+                <a href="https://www.facebook.com/designinfotech"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.twitter.com/DesignITAfrica"><i class="fa fa-twitter"></i></a>
+                <a href="linkedin.com/company/designit-africa"><i class="fa fa-linkedin"></i></a>
+                <img src="img/designit.png" alt="DesignIT Africa">
+                <a href="https://wa.me/2348087869811"><i class="fa fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/designit_africa"><i class="fa fa-instagram"></i></a>
+                <a href="https://github.com/DesignIT-Africa"><i class="fa fa-github"></i></a>
+            </ul>
+            <p>
+                &#169; Copyright 2021
+            </p>
+        </div>
+        <div class="footer mobile-view">
+            <ul class="mobile-block">
+                <div class="foot-icon">
+                    <img src="img/designit.png" alt="DesignIT Africa">
+                </div>
+            </ul>
+            <p>
+                &#169; Copyright 2021
+            </p>
+        </div>
     </footer>
 
-    <button id="myBtn"  title="Go to top"><a href="#" class="arctic_scroll" data-position="10"><img src="img/double-arrow.png" alt="scroll up"></a></button>
+    <button id="myBtn" title="Go to top"><a href="#" class="arctic_scroll" data-position="10"><img src="img/double-arrow.png" alt="scroll up"></a></button>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
@@ -604,11 +666,21 @@
     <script src="js/jquery.arctic_scroll.js"></script>
     <script src="js/Ycount.js"></script>
     <script>
-        $(function(){
+        $(function() {
             $(".arctic_scroll").arctic_scroll({
                 speed: 800
             });
         });
+    </script>
+    <script>
+        function ham() {
+            $('.navicon').toggleClass('navicon--active');
+            $('.toggle').toggleClass('toggle--active');
+        }
+
+        function close_ham() {
+            ham();
+        }
     </script>
 </body>
 
