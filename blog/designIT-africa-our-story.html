@@ -161,6 +161,31 @@
     <footer>
         <p>Copyright &copy; 2021 DesignIT Africa</p>
     </footer>
+    
+    <button id="myBtn" title="Go to top"><a href="#" class="arctic_scroll" data-position="10"><img src="../img/double-arrow.png" alt="scroll up"></a></button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <script src="../js/plugins.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/jquery.arctic_scroll.js"></script>
+    <script>
+        $(function() {
+            $(".arctic_scroll").arctic_scroll({
+                speed: 800
+            });
+        });
+    </script>
+    <script>
+        function ham() {
+            $('.navicon').toggleClass('navicon--active');
+            $('.toggle').toggleClass('toggle--active');
+        }
+
+        function close_ham() {
+            ham();
+        }
+    </script>
 </body>
 
 </html>
