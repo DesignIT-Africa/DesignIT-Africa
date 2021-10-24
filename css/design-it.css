@@ -175,13 +175,13 @@ video::-webkit-media-controls {
 }
 
 @media screen and (max-width: 1050px) {
-    .cd-slider-nav{
+    .cd-slider-nav {
         position: fixed;
         z-index: 99999999999999999;
         width: 100%;
     }
-    .cd-hero-slider .selected{
-    padding-top: 60px;
+    .cd-hero-slider .selected {
+        padding-top: 60px;
     }
     #myDIV {
         display: none;
@@ -196,7 +196,7 @@ video::-webkit-media-controls {
         margin-top: 20px;
         margin-right: 30px;
         float: right;
-          }
+    }
     .navicon {
         background: transparent;
         padding-bottom: 32px;
@@ -716,12 +716,30 @@ li .linkedin-fade {
     background-color: #008DB9;
 }
 
+.total-blog-container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
 .blog-post-thumb {
+    border: 1px solid #cab0b0;
+    border-radius: 20px;
     margin-bottom: 40px;
+    width: 90%;
+    padding: 10px;
+    box-shadow: 1px 2px 1px 2px #c4c4c4;
+}
+
+@media screen and (max-width: 800px) {
+    .total-blog-container {
+        display: block;
+    }
 }
 
 .blog-post-thumb .img img {
     width: 200px;
+    border-radius: 10px;
 }
 
 .blog-content h3 a {
@@ -827,7 +845,7 @@ li .linkedin-fade {
 
 /* 
 ---------------------------------------------
-team
+JOIN THE FAMILY
 --------------------------------------------- 
 */
 
@@ -1564,6 +1582,33 @@ body.lb-disable-scrolling {
     text-align: left;
 }
 
+.changers-text {
+    display: flex;
+    text-align: center;
+}
+
+.changers-text img {
+    width: 500px;
+}
+
+.changers-text p {
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .changers-text {
+        display: block;
+    }
+    .changers-text img {
+        width: 100%;
+    }
+    .changers-text p {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
+
 @media screen and (min-width: 700px) {
     .flex-blog img {
         width: 500px;
@@ -1573,15 +1618,26 @@ body.lb-disable-scrolling {
     .third-part p {
         padding: 10px 25px;
     }
-    .main-blog-content {
-        padding: 0px 95px;
+}
+
+@media screen and (max-width: 800px) {
+    .total-blog-container {
+        margin-right: -70px;
+        margin-left: 0px;
     }
 }
 
-@media screen and (min-width: 850px) {
-    .blog-content {
-        padding-right: 8px;
-        margin-left: -20px;
+@media screen and (max-width: 750px) {
+    .total-blog-container {
+        margin-right: -50px;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .total-blog-container {
+        margin-right: -30px;
+        margin-left: 0px;
     }
 }
 
