@@ -416,7 +416,7 @@ video::-webkit-media-controls {
     padding-left: 5%;
 }
 
-@media screen and (ma-width: 766px) {}
+@media screen and (max-width: 766px) {}
 
 .counters {
     background: #008DB9;
@@ -470,7 +470,7 @@ video::-webkit-media-controls {
 @media screen and (min-width: 1200px) {
     .counters .container {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         margin: 0px -30px 0px -30px;
     }
     .counters .container>div:nth-of-type(1),
