@@ -5,7 +5,7 @@ window.onload = function() {
         i++;
         follower.innerText = i;
 
-        if (follower.innerText == 715) {
+        if (follower.innerText == 815) {
             clearInterval(count);
         }
     }, 50);
