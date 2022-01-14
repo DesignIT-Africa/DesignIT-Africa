@@ -1697,6 +1697,7 @@ body.lb-disable-scrolling {
         display: flex;
     }
     .exception {
-        width: 50%;
+        display: grid;
+        grid-template-columns: auto auto;
     }
 }
