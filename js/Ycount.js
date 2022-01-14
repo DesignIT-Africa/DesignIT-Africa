@@ -35,7 +35,7 @@ window.onload = function() {
         l++;
         follower3.innerText = l;
 
-        if (follower3.innerText == 9) {
+        if (follower3.innerText == 22) {
             clearInterval(count3);
         }
     }, 200);
